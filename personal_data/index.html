@@ -6,25 +6,44 @@
   <title>Timeline</title>
 </head>
 <body>
-  <div id="Account">
+  <div id="Account" class="city">
     <h2>Account</h2>
     <p>London is the capital of England.</p>
   </div>
 
-  <div id="Guns" style="display:none">
+  <div id="Guns" class="city" style="display:none">
     <h2>Guns</h2>
     <p>Paris is the capital of France.</p>
   </div>
 
-  <div id="Maps" style="display:none">
+  <div id="Maps" class="city" style="display:none">
     <h2>Maps</h2>
     <p>Tokyo is the capital of Japan.</p>
   </div>
   
-  <div id="Last_40_Matches" style="display:none">
+  <div id="Last_40_Matches" class="city" style="display:none">
     <h2>Last 40 Matches</h2>
     <div class='tableauPlaceholder' id='viz1621902675709' style='position: relative'><noscript><a href='#'><img alt='last_40_matches_dashboard ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNX4HHKYC&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;RNX4HHKYC' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;RN&#47;RNX4HHKYC&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='es' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621902675709');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='397px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='397px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
   </div>
   
+  <div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+  </div>
+  
 </body>
 </html>
+
+
+<javasript>
+  function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
+}
+
+                           </javascript>
