@@ -11,3 +11,4 @@ Napoleon
 flow map
 scatter plots
 exploratory data analysis
+color encoding
