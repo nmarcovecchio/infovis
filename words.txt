@@ -1,0 +1,9 @@
+Time-Series
+Stacked Graphs
+Small Multiples
+Horizon Graphs
+Flow Maps
+Choropleth Maps
+Hierarchies
+sunburst
+Tufte
