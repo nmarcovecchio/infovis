@@ -7,3 +7,4 @@ Choropleth Maps
 Hierarchies
 sunburst
 Tufte
+Napoleon
