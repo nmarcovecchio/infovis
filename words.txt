@@ -8,3 +8,6 @@ Hierarchies
 sunburst
 Tufte
 Napoleon
+flow map
+scatter plots
+exploratory data analysis
